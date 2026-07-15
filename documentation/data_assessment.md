@@ -9,13 +9,27 @@ The order details dataset contains 12,234 records representing individual menu i
 ### Data Completeness
 
 - The dataset contains 137 missing values within the item_id field.
-- Missing item identifiers may affect product-level analysis as they cannot be matched with menu information.
+- Further analysis showed that these records represented 137 unique orders.
+- As item_id is required to accurately link transactions with menu information, these records cannot be reliably used for product, category or revenue analysis.
+- Since the missing records represent approximately 1.12% of the dataset, they will be removed during the cleaning stage to maintain analytical accuracy.
 
 ### Data Formatting
 
 - order_date is currently stored as a text field and requires conversion into a datetime format.
 - order_time is stored as text and requires transformation for time-based analysis.
 - item_id is stored as a float due to missing values and requires data type correction.
+
+### Product Coverage Assessment
+
+The order details dataset contains 32 unique menu item identifiers.
+
+These identifiers will be matched with the menu items dataset to retrieve additional product information, including item names, categories and pricing.
+
+This relationship enables product-level analysis such as:
+- Revenue contribution by menu item
+- Category performance
+- Product demand trends
+- Menu optimisation opportunities
 
 ## Preparation Required
 
