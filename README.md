@@ -1,7 +1,6 @@
 # Restaurant Business Performance Analysis
-End-to-end Business Intelligence project analysing restaurant performance using SQL, Python, Power BI and Tableau to uncover revenue drivers, profitability trends and operational insights.
 
-# Business Objectives & Aims
+## Business Objectives & Aims
 
 The aim of this project is to develop an end-to-end Business Intelligence solution that transforms restaurant transaction data into actionable insights to support strategic decision-making.
 
