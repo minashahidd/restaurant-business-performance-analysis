@@ -34,3 +34,20 @@ This relationship enables product-level analysis such as:
 ## Preparation Required
 
 The dataset will require cleaning and transformation before being used for SQL analysis, dashboard development and business reporting.
+
+## Menu Dataset Assessment
+
+The menu dataset contains 32 records representing available restaurant menu items.
+
+### Data Quality Findings
+
+- No missing values were identified across any fields.
+- Data types were appropriate for analysis.
+- Menu item identifiers were correctly formatted as integers.
+- Price values were stored as numeric fields, allowing revenue calculations.
+
+### Relationship Validation
+
+The menu dataset will be linked with the order details dataset using the menu_item_id and item_id fields.
+
+This relationship will allow transaction-level records to be enriched with product details such as item names, categories and pricing.
