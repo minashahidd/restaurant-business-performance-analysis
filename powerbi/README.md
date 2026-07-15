@@ -122,3 +122,24 @@ Power BI Dashboard & Insights
 - Python
 - Pandas
 - CSV Data Integration
+
+# DAX Measures & KPI Development
+
+To support business reporting, reusable DAX measures were created within Power BI.
+
+Key metrics developed include:
+
+## Revenue Analysis
+
+- Total Revenue
+- Monthly Revenue
+
+## Order Performance
+
+- Total Orders
+- Total Items Sold
+- Average Order Value
+- Average Items Per Order
+
+These measures were designed to provide consistent calculations across dashboards and enable interactive business analysis.
+
