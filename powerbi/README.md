@@ -143,3 +143,18 @@ Key metrics developed include:
 
 These measures were designed to provide consistent calculations across dashboards and enable interactive business analysis.
 
+## Date Modelling
+
+A dedicated date dimension was created to support accurate time-based analysis and reporting.
+
+The date table enables analysis across:
+
+- Monthly revenue trends
+- Day-of-week performance
+- Time-based business patterns
+- Future time intelligence calculations
+
+The model follows a star schema approach with:
+
+Dim_Date → Fact_Sales
+Dim_Menu → Fact_Sales
