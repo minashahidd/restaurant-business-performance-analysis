@@ -7,4 +7,5 @@
 The purpose of this analysis is to explore the raw datasets, understand their structure, assess data quality, and identify any preparation required before performing business analysis.
 
 ### Documentation
-The order transaction dataset contains 12,234 records representing individual customer transactions.
+- The order transaction dataset contains 12,234 records representing individual customer transactions.
+- No duplicate records were identified
