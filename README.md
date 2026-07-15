@@ -121,3 +121,103 @@ The following cleaning and transformation steps will be performed:
 - Standardise data types.
 - Validate relationships between transaction and menu tables.
 - Create analysis-ready datasets for SQL querying, Python analysis and BI dashboard development.
+
+# Data Cleaning & Transformation
+
+Following the initial data assessment, the raw datasets were cleaned and transformed using Python and Pandas to create reliable, analysis-ready datasets for business intelligence reporting.
+
+The cleaning process focused on improving data quality, standardising fields, and preparing the data structure for SQL analysis and dashboard development.
+
+---
+
+# Order Details Cleaning
+
+The order details dataset contained 12,234 transaction-level records.
+
+The following transformations were performed:
+
+## Missing Data Handling
+
+- Identified 137 records with missing `item_id` values.
+- Investigated the impact of missing records and found they represented 137 unique orders.
+- As `item_id` was required to connect transactions with menu information, these records were removed to prevent inaccurate product-level analysis.
+
+The removal affected approximately 1.12% of the dataset.
+
+---
+
+## Data Type Standardisation
+
+The following fields were transformed:
+
+- Converted `order_date` from text format into a datetime field.
+- Converted `order_time` into a time format to support time-based analysis.
+- Corrected `item_id` from float format to integer format after missing records were removed.
+
+---
+
+## Feature Engineering
+
+Additional fields were created to support business analysis:
+
+- `order_month` — Used to analyse monthly sales trends.
+- `day_of_week` — Used to identify demand patterns across weekdays.
+- `order_hour` — Used to identify peak ordering periods.
+
+These fields support future analysis of customer behaviour and operational performance.
+
+---
+
+# Menu Dataset Cleaning
+
+The menu dataset contained 32 menu items and required minimal transformation.
+
+Checks performed:
+
+- Verified there were no missing values.
+- Confirmed appropriate data types.
+- Validated pricing fields for numerical analysis.
+- Standardised column naming conventions to support database relationships.
+
+The menu dataset was prepared as a reference table containing product information including:
+
+- Item name
+- Category
+- Price
+
+---
+
+# Final Clean Dataset Structure
+
+The cleaned datasets were prepared for integration:
+
+### Orders Table
+
+Contains:
+
+- Transaction identifiers
+- Order date and time
+- Product identifiers
+- Time-based analytical fields
+
+### Menu Table
+
+Contains:
+
+- Product identifiers
+- Menu item names
+- Categories
+- Pricing information
+
+These datasets are now ready for SQL querying, data modelling and dashboard development.
+
+---
+
+# Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Data Cleaning Techniques
+- Data Validation
+- Feature Engineering
