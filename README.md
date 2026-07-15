@@ -31,3 +31,18 @@ The analysis focuses on understanding sales performance, identifying key revenue
 - Translate analytical findings into practical recommendations.
 - Highlight opportunities to improve profitability and operational performance.
 - Demonstrate how data can support strategic business decisions.
+
+# Dataset Overview
+
+The analysis uses transactional restaurant data containing order-level information and menu details.
+
+The dataset includes:
+
+- Customer orders
+- Order dates and times
+- Menu items
+- Product categories
+- Pricing information
+- Quantity purchased
+
+The data was analysed to understand revenue performance, menu trends and operational opportunities.
