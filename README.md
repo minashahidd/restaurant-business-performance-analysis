@@ -367,3 +367,97 @@ Key metrics developed include:
 
 These measures were designed to provide consistent calculations across dashboards and enable interactive business analysis.
 
+# 📊 Power BI
+
+Following data validation and cleaning in Python, the prepared datasets were imported into Power BI to develop an interactive Business Intelligence report. The report was built using a structured star schema, DAX measures, and multiple dashboard pages to transform raw restaurant transaction data into actionable business insights.
+
+## Data Preparation
+
+Before visualisation, Power Query was used to prepare the data for analysis by:
+
+* Importing the cleaned `orders_cleaned.csv` and `menu_cleaned.csv` datasets.
+* Creating a merged **Fact_Sales** table containing transactional sales data.
+* Building separate **Dim_Menu** and **Dim_Date** dimension tables.
+* Creating relationships to form a **Star Schema** data model.
+* Validating data types and ensuring the model was optimised for reporting.
+
+## Data Model
+
+A Star Schema was implemented to improve report performance and support scalable analysis.
+
+**Fact Table**
+
+* Fact_Sales
+
+**Dimension Tables**
+
+* Dim_Menu
+* Dim_Date
+
+This structure enables efficient filtering, cleaner relationships, and follows industry-standard Business Intelligence modelling practices.
+
+## DAX Measures
+
+Reusable measures were created to calculate key business metrics, including:
+
+* Total Revenue
+* Total Orders
+* Total Items Sold
+* Average Order Value
+* Average Menu Price
+* Total Menu Items
+* Total Categories
+* Peak Ordering Hour
+* Busiest Ordering Day
+* Active Ordering Hours
+
+Using DAX measures ensured consistent calculations across all report pages while allowing dynamic filtering through slicers.
+
+## Dashboard Development
+
+Three interactive dashboard pages were developed, each designed to answer a different business question.
+
+### 📈 Executive Overview
+
+Provides a high-level summary of business performance through KPI cards and interactive visualisations.
+
+**Features**
+
+* Revenue KPIs
+* Monthly revenue trend
+* Revenue by menu category
+* Top 10 revenue-generating menu items
+* Interactive month filtering
+
+---
+
+### 🍽️ Menu Performance
+
+Focuses on analysing product performance and identifying opportunities for menu optimisation.
+
+**Features**
+
+* Menu KPIs
+* Revenue contribution by category
+* Top-performing menu items
+* Product performance matrix
+* Sales volume vs revenue analysis
+ 
+---
+
+### ⏰ Operational Insights
+
+Analyses customer ordering behaviour to support operational decision-making.
+
+**Features**
+
+* Peak ordering hour
+* Busiest ordering day
+* Orders by hour
+* Orders by day
+* Day vs hour heatmap
+
+## Outcome
+
+The final report transforms transactional restaurant data into a clear, interactive dashboard that enables stakeholders to monitor performance, identify revenue drivers, analyse customer ordering behaviour, and support data-driven business decisions.
+
