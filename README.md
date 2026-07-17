@@ -8,7 +8,7 @@ The analysis focuses on understanding sales performance, identifying key revenue
 
 View full dashboard by pressing on the link for any image!
 
-![[Executive Overview](Restaurant%20Performance%20-%20Executive%20Overview.png)](https://app.powerbi.com/view?r=eyJrIjoiYjRkZWMzYzYtMzNjNS00NWY1LWFjMzYtMjE3MDkxMzZiYWQ5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9)
+![Executive Overview]((Restaurant%20Performance%20-%20Executive%20Overview.png)(https://app.powerbi.com/view?r=eyJrIjoiYjRkZWMzYzYtMzNjNS00NWY1LWFjMzYtMjE3MDkxMzZiYWQ5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9))
 ![Menu Overview](Restaurant%20Performance%20-%20Menu%20Overview.png)
 ![Operational Insight](Restaurant%20Performance%20-%20Operational%20Insights.png)
 
