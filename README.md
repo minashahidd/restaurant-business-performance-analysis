@@ -6,9 +6,9 @@ The aim of this project is to develop an end-to-end Business Intelligence soluti
 
 The analysis focuses on understanding sales performance, identifying key revenue drivers, evaluating menu performance, and uncovering opportunities to improve operational efficiency and business growth.
 
-View full dashboard by pressing on the link for any image!
+[View the full interactive dashboard here](https://app.powerbi.com/view?r=eyJrIjoiYjRkZWMzYzYtMzNjNS00NWY1LWFjMzYtMjE3MDkxMzZiYWQ5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9)
 
-![Executive Overview]((Restaurant%20Performance%20-%20Executive%20Overview.png)(https://app.powerbi.com/view?r=eyJrIjoiYjRkZWMzYzYtMzNjNS00NWY1LWFjMzYtMjE3MDkxMzZiYWQ5IiwidCI6IjNlYTdjMTI4LWM2MDEtNDQ3OS1hMDAzLWUxNGQwMGMwYjVjYiJ9))
+![Executive Overview](Restaurant%20Performance%20-%20Executive%20Overview.png)
 ![Menu Overview](Restaurant%20Performance%20-%20Menu%20Overview.png)
 ![Operational Insight](Restaurant%20Performance%20-%20Operational%20Insights.png)
 
