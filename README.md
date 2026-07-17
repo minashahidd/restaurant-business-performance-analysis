@@ -71,102 +71,101 @@ The completed Power BI report provides an interactive view of restaurant perform
 
 ---
 
-📂 Dataset Overview
-
-This analysis uses restaurant transaction data containing order-level purchasing information and menu details, to provide insights into customer purchasing activity, revenue generation, product demand, menu performance, and ordering patterns.
+# 📂 Dataset Overview
+This analysis uses restaurant transaction data containing order-level purchasing information and menu details, delivering insights into customer purchasing activity, revenue generation, product demand, menu performance, and ordering patterns.
 
 The dataset consists of two linked core tables:
 
-🧾 Order Details Table
+## 🧾 Order Details Table
+Contains transaction-level information for every menu item purchased — **each row represents an individual item within a customer order**.
 
-Contains transaction-level information for every menu item purchased — each row represents an individual item within a customer order.
+### Key Fields
+| Column | Description |
+|---|---|
+| `order_details_id` | Unique identifier for each transaction record |
+| `order_id` | Customer order identifier |
+| `order_date` | Date the order was placed |
+| `order_time` | Time the order was placed |
+| `item_id` | Identifier linking transactions to menu items |
 
-Key Fields
-Column Description 
-order_details_id Unique identifier for each transaction record 
-order_id Customer order identifier 
-order_date Date the order was placed 
-order_time Time the order was placed 
-item_id Identifier linking transactions to menu items 
-
-🍔 Menu Items Table
-
+## 🍔 Menu Items Table
 Contains descriptive information required for product-level and revenue analysis.
 
-Key Fields
-Column Description 
-item_id Unique product identifier 
-item_name Menu item name 
-category Product category 
-price Selling price 
+### Key Fields
+| Column | Description |
+|---|---|
+| `item_id` | Unique product identifier |
+| `item_name` | Menu item name |
+| `category` | Product category |
+| `price` | Selling price |
 
-🔍 Data Exploration & Quality Assessment
+---
 
-All initial checks were completed using Python and Pandas, to understand dataset structure, identify quality issues, validate data reliability, and define preparation steps — ensuring all later analysis and reporting is built on accurate, consistent data.
+# 🔍 Data Exploration & Quality Assessment
+All initial checks were completed using **Python and Pandas** to understand dataset structure, identify quality issues, validate reliability, and define preparation steps — ensuring all analysis and reporting is built on accurate, consistent data.
 
-📊 Initial Dataset Profile
+## 📊 Initial Dataset Profile
+- **12,234 total transaction-level records**
+- **5,370 unique customer orders**
+- **32 unique menu items**
 
-• 12,234 total transaction-level records
+> ℹ️ Note: Source data lists individual items rather than full orders. All order-based calculations use unique values to avoid overcounting.
 
-• 5,370 unique customer orders
+## 🧪 Quality & Validation Checks
+### Missing Value Analysis
+- 137 missing values in the `item_id` field
+- Equates to **137 unique orders (~1.12% of the full dataset)**
+- Removed these records as `item_id` is required to link transactions to menu details — preserving accuracy and data integrity.
 
-• 32 unique menu items
-ℹ️ Note: The source data lists individual purchased items rather than full customer orders. All order-based calculations use unique values to avoid overcounting and ensure accurate reporting.
-🧪 Quality & Validation Checks
+### Duplicate Validation
+✅ No duplicate transaction records identified.
 
-Missing Value Analysis
+### Formatting & Data Type Transformations
+| Column | Original Format | Transformation | Business Purpose |
+|---|---|---|---|
+| `order_date` | Text string | Converted to `datetime` | Enable trend analysis, date filtering and calculations |
+| `order_time` | Unformatted text | Converted to time format | Support peak hour and demand pattern analysis |
+| `item_id` | Float | Converted to integer (after removing incomplete records) | Ensure correct table relationships |
 
-• 137 missing values in the item_id field
+---
 
-• These correspond to 137 unique orders, equal to ~1.12% of the full dataset
+# 🛠️ Data Cleaning & Preparation
+All work completed in **Python and Pandas**, producing datasets ready for SQL querying, Power BI modelling and business intelligence development.
 
-• As item_id is required to link transactions to menu details, these records were removed to preserve analytical accuracy, prevent calculation errors, and maintain data integrity.
+## 🧾 Order Details Table
+Only 1.12% of records were removed; full analytical reliability is maintained.
 
-Duplicate Validation
+### 🧩 Feature Engineering
+Additional fields created for deeper analysis:
+| New Field | Use Case |
+|---|---|
+| `order_month` | Track monthly sales trends |
+| `day_of_week` | Identify demand patterns by weekday |
+| `order_hour` | Locate peak ordering periods |
 
-✅ No duplicate transaction records found — every entry is unique.
+These support analysis of customer behaviour, revenue trends, demand forecasting and resource planning.
 
-Formatting & Data Type Fixes
-
-All required transformations were applied in one pass:
-Column Original Format Transformation Applied Business Purpose 
-order_date Stored as text Converted to standard datetime Enable trend analysis, date filtering and time-based calculations 
-order_time Unformatted text Converted to standard time format Support peak hour analysis and hourly demand reporting 
-item_id Stored as float Converted to integer (after removing incomplete records) Ensure correct relationships between transaction and menu data 
-
-🛠️ Additional Cleaning & Preparation
-
-All work completed in Python and Pandas, producing datasets ready for SQL querying, Power BI modelling and end-to-end business intelligence development.
-
-🧾 Order Details Table
-
-After removing incomplete records, reliability is fully preserved with only 1.12% of the original dataset removed.
-
-🧩 Feature Engineering
-
-New fields added to enable deeper analysis:
-New Field Business Use Case 
-order_month Track monthly sales and revenue trends 
-day_of_week Identify demand patterns across weekdays 
-order_hour Pinpoint peak ordering periods 
-
-These support analysis of customer behaviour, revenue trends, demand forecasting, and staffing/resource planning.
-
-🍔 Menu Items Table
-
-Minimal transformation required; full validation confirmed:
+## 🍔 Menu Items Table
+Minimal changes required; validation confirmed:
 ✅ No missing values
 ✅ Correct data types
-✅ Valid numerical pricing data
-✅ Consistent, standardised column names for modelling
-✅ Final Clean Dataset
+✅ Valid pricing values
+✅ Standardised column names for modelling
 
-Ready for integration into your full workflow:
-Table Contents 
-Order Details Transaction IDs, order references, timestamps, product links, and engineered time/date fields 
-Menu Items Product IDs, item names, categories, and pricing 
+---
 
-Fully optimised for Power BI data modelling, DAX calculation, and dashboard development.
+# ✅ Final Clean Dataset
+Ready for full workflow integration:
+
+| Table | Contents |
+|---|---|
+| **Order Details** | Transaction IDs, order references, timestamps, product links, engineered date/time fields |
+| **Menu Items** | Product IDs, item names, categories, pricing |
+
+Optimised for Power BI modelling, DAX calculations and dashboard development.
+
+---
+
 # 📊 Power BI Business Intelligence Development
 
 Following data exploration and cleaning in Python, the prepared datasets were imported into Power BI to develop an interactive Business Intelligence solution.
