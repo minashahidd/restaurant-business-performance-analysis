@@ -6,6 +6,12 @@ The aim of this project is to develop an end-to-end Business Intelligence soluti
 
 The analysis focuses on understanding sales performance, identifying key revenue drivers, evaluating menu performance, and uncovering opportunities to improve operational efficiency and business growth.
 
+View full dashboard by pressing on the link for any image!
+
+[Executive Overview](Restaurant Performance - Executive Overview.png)
+[Menu Overview](Restaurant Performance - Menu Overview.png)
+[Operational Insight](Restaurant Performance - Operational Insight.png)
+
 ## Key Objectives
 
 ### 1. Analyse Business Performance
