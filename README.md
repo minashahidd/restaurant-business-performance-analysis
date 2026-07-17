@@ -85,15 +85,13 @@ The dataset provides insight into:
 
 The dataset consisted of two primary tables:
 
----
-
-# 🧾 Order Details Table
+## 🧾 Order Details Table
 
 The order details table contains transaction-level information for every menu item purchased.
 
 Each row represents an individual item within a customer order.
 
-## Key Fields
+### Key Fields
 
 | Column | Description |
 |---|---|
@@ -103,13 +101,12 @@ Each row represents an individual item within a customer order.
 | `order_time` | Time the order was placed |
 | `item_id` | Identifier linking transactions to menu items |
 
----
 
-# 🍔 Menu Items Table
+## 🍔 Menu Items Table
 
 The menu table contains descriptive information required for product-level and revenue analysis.
 
-## Key Fields
+### Key Fields
 
 | Column | Description |
 |---|---|
