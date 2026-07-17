@@ -130,9 +130,8 @@ The purpose of this stage was to:
 
 This ensured that all reporting and calculations were built on accurate and consistent data.
 
----
 
-# 📊 Dataset Structure Analysis
+## 📊 Dataset Structure Analysis
 
 Initial exploration identified the following:
 
@@ -142,12 +141,10 @@ Initial exploration identified the following:
 
 The dataset contained individual item transactions rather than complete customer orders.
 
-Therefore, order-based calculations were performed using unique:
+Therefore, order-based calculations were performed using unique values instead of transaction row counts to ensure accurate business reporting.
 
-values instead of transaction row counts to ensure accurate business reporting.
-
-🧪 Data Quality Assessment
-Missing Value Analysis
+## 🧪 Data Quality Assessment
+### Missing Value Analysis
 
 A missing value assessment was performed across all columns.
 
@@ -162,14 +159,15 @@ Approximately 1.12% of the dataset
 
 Since item_id was required to connect transactional data with menu information, these records could not accurately contribute towards product-level analysis.
 
-Cleaning Decision
+### Cleaning Decision
 
 The affected records were removed during the data cleaning stage to:
 
 Maintain analytical accuracy.
 Prevent incorrect product performance calculations.
 Preserve the integrity of the data model.
-🔁 Duplicate Record Validation
+
+### 🔁 Duplicate Record Validation
 
 A duplicate record assessment was performed to ensure transaction accuracy.
 
@@ -179,7 +177,7 @@ Result:
 
 This confirmed that each transaction detail represented a unique record within the dataset.
 
-🛠️ Data Formatting Assessment
+### 🛠️ Data Formatting Assessment
 
 The initial analysis identified several formatting issues requiring transformation.
 
@@ -187,7 +185,8 @@ Column	Issue Identified	Required Transformation
 order_date	Stored as text format	Converted into datetime format
 order_time	Required formatting for time analysis	Converted into usable time format
 item_id	Stored as float due to missing values	Converted into integer after missing records were removed
-🐍 Data Cleaning & Transformation (Python)
+
+### 🐍 Data Cleaning & Transformation
 
 Following the initial data assessment, Python and Pandas were used to clean, transform and validate the datasets.
 
