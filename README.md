@@ -8,7 +8,7 @@ The analysis focuses on understanding sales performance, identifying key revenue
 
 View full dashboard by pressing on the link for any image!
 
-[Executive Overview](Restaurant Performance - Executive Overview.png)
+[Executive Overview](Restaurant%20Performance%20-%20Executive%20Overview.png)
 [Menu Overview](Restaurant Performance - Menu Overview.png)
 [Operational Insight](Restaurant Performance - Operational Insight.png)
 
