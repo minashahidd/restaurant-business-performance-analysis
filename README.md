@@ -147,9 +147,13 @@ These support analysis of customer behaviour, revenue trends, demand forecasting
 
 ## 🍔 Menu Items Table
 Minimal changes required; validation confirmed:
+
 ✅ No missing values
+
 ✅ Correct data types
+
 ✅ Valid pricing values
+
 ✅ Standardised column names for modelling
 
 ---
