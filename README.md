@@ -99,6 +99,8 @@ Contains descriptive information required for product-level and revenue analysis
 | `category` | Product category |
 | `price` | Selling price |
 
+---
+
 # 🔍 Data Exploration & Quality Assessment
 All initial checks were completed using **Python and Pandas** to understand dataset structure, identify quality issues, validate reliability, and define preparation steps — ensuring all analysis and reporting is built on accurate, consistent data.
 
@@ -125,8 +127,10 @@ All initial checks were completed using **Python and Pandas** to understand data
 | `order_time` | Unformatted text | Converted to time format | Support peak hour and demand pattern analysis |
 | `item_id` | Float | Converted to integer (after removing incomplete records) | Ensure correct table relationships |
 
+---
+
 # 🛠️ Data Cleaning & Preparation
-All work completed in **Python and Pandas**, producing datasets ready for SQL querying, Power BI modelling and business intelligence development.
+All work completed in **Python and Pandas**.
 
 ## 🧾 Order Details Table
 Only 1.12% of records were removed; full analytical reliability is maintained.
@@ -148,7 +152,7 @@ Minimal changes required; validation confirmed:
 ✅ Valid pricing values
 ✅ Standardised column names for modelling
 
-
+---
 # ✅ Final Clean Dataset
 Ready for full workflow integration:
 
