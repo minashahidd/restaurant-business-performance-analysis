@@ -139,8 +139,9 @@ All initial checks were completed using **Python and Pandas** to understand data
 ✅ No duplicate transaction records identified.
 
 ### Formatting & Data Type Transformations
+
 | Column | Original Format | Transformation | Business Purpose |
-|---|---|---|---|
+| -------- | -------- | -------- | -------- |
 | `order_date` | Text string | Converted to `datetime` | Enable trend analysis, date filtering and calculations |
 | `order_time` | Unformatted text | Converted to time format | Support peak hour and demand pattern analysis |
 | `item_id` | Float | Converted to integer (after removing incomplete records) | Ensure correct table relationships |
@@ -154,9 +155,11 @@ All work completed in **Python and Pandas**.
 Only 1.12% of records were removed; full analytical reliability is maintained.
 
 ### 🧩 Feature Engineering
+
 Additional fields created for deeper analysis:
+
 | New Field | Use Case |
-|---|---|
+| -------- | -------- |
 | `order_month` | Track monthly sales trends |
 | `day_of_week` | Identify demand patterns by weekday |
 | `order_hour` | Locate peak ordering periods |
@@ -277,6 +280,7 @@ Contains date attributes used to support time intelligence and trend analysis ac
 # 🔗 Relationship Design
 
 Relationships were created using the unique product identifier.
+
 Dim_Menu
 │
 │ 1
