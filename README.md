@@ -69,6 +69,22 @@ The completed Power BI report provides an interactive view of restaurant perform
 
 ![Operational Insight](Restaurant%20Performance%20-%20Operational%20Insights.png)
 
+## 📄 Business Performance Report
+
+Data is only valuable when it leads to better decisions. To demonstrate this, I translated the dashboard findings into a stakeholder-ready business report, presenting the analysis in a commercial format with actionable recommendations.
+
+The report summarises the key performance insights, identifies opportunities to improve profitability and operational efficiency, and outlines practical recommendations to support strategic decision-making.
+
+📥 **Read the full report here:**  
+[Restaurant Performance Analysis Report.pdf](Restaurant%20Performance%20Analysis%20Report.pdf)
+
+### The report includes:
+- Executive summary of business performance
+- Revenue and sales trend analysis
+- Menu and product performance insights
+- Operational performance findings
+- Commercial recommendations for growth
+- Data-driven actions to improve profitability and efficiency
 ---
 
 # 📂 Dataset Overview
