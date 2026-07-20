@@ -479,37 +479,63 @@ The completed project demonstrates a full Business Intelligence pipeline from ra
 Raw Restaurant Data
 
 │
+
 ▼
 
 Data Exploration (Python)
 
 │
+
 ▼
 
 Data Quality Assessment
+
 │
+
 ▼
+
 Data Cleaning & Validation (Python & Pandas)
+
 │
+
 ▼
+
 Feature Engineering
+
 │
+
 ▼
+
 Power Query Transformation
+
 │
+
 ▼
+
 Star Schema Data Model
+
 │
+
 ▼
+
 Relationship Design
+
 │
+
 ▼
+
 DAX Measure Development
+
 │
+
 ▼
+
 Interactive Power BI Dashboard
+
 │
+
 ▼
+
 Business Insights & Recommendations
 
 
