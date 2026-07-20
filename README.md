@@ -69,7 +69,7 @@ The completed Power BI report provides an interactive view of restaurant perform
 
 ![Operational Insight](Restaurant%20Performance%20-%20Operational%20Insights.png)
 
-## 📄 Business Performance Report
+# 📄 Business Performance Report
 
 Data is only valuable when it leads to better decisions. To demonstrate this, I translated the dashboard findings into a stakeholder-ready business report, presenting the analysis in a commercial format with actionable recommendations.
 
