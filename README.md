@@ -283,20 +283,14 @@ Relationships were created using the unique product identifier to connect the me
 
 ### Data Model Relationship
 
-`text
-Dim_Menu
-   |
-   | 1
-   |
-   |
-   | *
-Fact_Sales
+| Primary Table | Key       | Relationship      | Secondary Table | Key       |
+| ------------- | --------- | ----------------- | --------------- | --------- |
+| `Dim_Menu`    | `item_id` | One-to-Many (1:*) | `Fact_Sales`    | `item_id` |
 
 
 Relationship:
 
-
-> Dim_Menu[item_id] → Fact_Sales[item_id]
+ Dim_Menu[item_id] → Fact_Sales[item_id]
 
 
 This allows transactional sales data to be analysed by:
