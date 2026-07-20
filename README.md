@@ -279,21 +279,24 @@ Contains date attributes used to support time intelligence and trend analysis ac
 
 # 🔗 Relationship Design
 
-Relationships were created using the unique product identifier.
+Relationships were created using the unique product identifier to connect the menu information with transaction-level sales data.
 
+### Data Model Relationship
+
+```text
 Dim_Menu
-│
-│ 1
-│
-│
-*
+   |
+   | 1
+   |
+   |
+   | *
 Fact_Sales
 
 
 Relationship:
 
 
-Dim_Menu[item_id] → Fact_Sales[item_id]
+> Dim_Menu[item_id] → Fact_Sales[item_id]
 
 
 This allows transactional sales data to be analysed by:
