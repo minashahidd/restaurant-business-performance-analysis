@@ -477,11 +477,15 @@ Provides operational insight into customer demand patterns, helping management m
 The completed project demonstrates a full Business Intelligence pipeline from raw data through to business insight.
 
 Raw Restaurant Data
+
 │
 ▼
+
 Data Exploration (Python)
+
 │
 ▼
+
 Data Quality Assessment
 │
 ▼
