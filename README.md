@@ -434,30 +434,6 @@ Provides operational insight into customer demand patterns, helping management m
 
 ---
 
-# 💡 Business Insights & Recommendations
-
-The completed dashboard transforms transactional restaurant data into meaningful business intelligence by highlighting the key drivers behind business performance.
-
-Key insights include:
-
-- Identification of the highest-performing menu items contributing the greatest revenue.
-- Analysis of category-level performance to support menu optimisation.
-- Recognition of peak ordering periods to improve staffing and operational planning.
-- Identification of customer purchasing trends across different days and times.
-- Clear visibility of overall revenue performance through interactive KPI reporting.
-
-### Recommendations
-
-Based on the analysis, the business could:
-
-- Promote high-performing menu items to maximise revenue.
-- Review underperforming products for potential menu optimisation.
-- Schedule staffing around peak ordering periods to improve operational efficiency.
-- Use category performance insights to guide future pricing and promotional strategies.
-- Monitor KPIs regularly to support data-driven decision-making.
-
----
-
 # 🛠️ Tools & Technologies
 
 ## Programming & Data Preparation
