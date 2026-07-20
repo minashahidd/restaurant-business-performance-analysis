@@ -93,27 +93,29 @@ This analysis uses restaurant transaction data containing order-level purchasing
 The dataset consists of two linked core tables:
 
 ## 🧾 Order Details Table
-Contains transaction-level information for every menu item purchased — **each row represents an individual item within a customer order**.
 
-### Key Fields
+Contains transaction-level information for every menu item purchased. **Each row represents an individual item within a customer order.**
+
 | Column | Description |
-|---|---|
+|--------|-------------|
 | `order_details_id` | Unique identifier for each transaction record |
 | `order_id` | Customer order identifier |
 | `order_date` | Date the order was placed |
 | `order_time` | Time the order was placed |
-| `item_id` | Identifier linking transactions to menu items |
+| `item_id` | Identifier linking each transaction to a menu item |
+
+---
 
 ## 🍔 Menu Items Table
-Contains descriptive information required for product-level and revenue analysis.
 
-### Key Fields
+Contains descriptive information for each menu item used throughout the analysis.
+
 | Column | Description |
-|---|---|
-| `item_id` | Unique product identifier |
-| `item_name` | Menu item name |
-| `category` | Product category |
-| `price` | Selling price |
+|--------|-------------|
+| `item_id` | Unique menu item identifier |
+| `item_name` | Name of the menu item |
+| `category` | Menu category (Italian, Asian, Mexican or American) |
+| `price` | Selling price of the menu item |
 
 ---
 
